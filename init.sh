@@ -1,43 +1,7 @@
 #!/usr/bin/env bash
-
 # MACOS
 sudo xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-
-
-# HOMEBREW
-brew install \
-	git \
-	mackup \
-	fish \
-	pyenv \
-	poetry \
-	fzf \
-	ripgrep \
-	htop \
-	neovim \
-	autojump \
-	grc \
-	bat \
-	fd \
-	exa \
-	gnupg
-
-brew cask install \
-	google-chrome \
-	jetbrains-toolbox \
-	dropbox \
-	slack \
-	alfred \
-	amethyst \
-	iterm2 \
-	karabiner-elements \
-	transmission
-
-brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font-mono
-brew untap homebrew/cask-fonts
 
 
 # FISH
