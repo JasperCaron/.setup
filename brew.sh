@@ -13,65 +13,68 @@ BREW_PREFIX=$(brew --prefix)
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-brew reinstall coreutils
+brew install coreutils
 ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Install some other useful utilities like `sponge`.
-brew reinstall moreutils
+brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
-brew reinstall findutils
+brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew reinstall gnu-sed #--with-default-names
+brew install gnu-sed #--with-default-names
 # Install a modern version of Bash.
-brew reinstall bash
-brew reinstall bash-completion2
+brew install bash
+brew install bash-completion2
 
 # Install `wget` with IRI support.
-brew reinstall wget #--with-iri
+brew install wget #--with-iri
 
 # Install GnuPG to enable PGP-signing commits.
-brew reinstall gnupg
+brew install gnupg
 
 # Install more recent versions of some macOS tools.
-#brew reinstall vim --with-override-system-vi
-brew reinstall grep
-brew reinstall openssh
-brew reinstall screen
-brew reinstall php
-brew reinstall gmp
+#brew install vim --with-override-system-vi
+brew install grep
+brew install openssh
+brew install screen
+brew install php
+brew install gmp
 
 # Install other useful binaries.
-brew reinstall ack
-#brew reinstall exiv2
-brew reinstall git
-brew reinstall git-lfs
-#brew reinstall gs
-brew reinstall imagemagick #--with-webp
-brew reinstall lua
-brew reinstall lynx
-#brew reinstall p7zip
-#brew reinstall pigz
-brew reinstall pv
-#brew reinstall rename
-#brew reinstall rlwrap
-#brew reinstall ssh-copy-id
-#brew reinstall tree
-#brew reinstall vbindiff
-#brew reinstall zopfli
-brew reinstall git
-brew reinstall mackup
+brew install ack
+#brew install exiv2
+brew install git
+brew install git-lfs
+#brew install gs
+brew install imagemagick #--with-webp
+brew install lua
+brew install lynx
+#brew install p7zip
+#brew install pigz
+brew install pv
+#brew install rename
+#brew install rlwrap
+#brew install ssh-copy-id
+#brew install tree
+#brew install vbindiff
+#brew install zopfli
+brew install git
+brew install mackup
 #brew install fish
-brew reinstall pyenv
-brew reinstall poetry
-brew reinstall fzf
-brew reinstall ripgrep
-brew reinstall htop
-brew reinstall neovim
-brew reinstall autojump
-brew reinstall grc
-brew reinstall bat
-brew reinstall fd
-brew reinstall exa
+brew install pyenv
+brew install poetry
+brew install fzf
+brew install ripgrep
+brew install htop
+brew install neovim
+brew install autojump
+brew install grc
+brew install bat
+brew install fd
+brew install exa
+brew install ranger
+brew install ncdu
+
 
 brew cask install google-chrome
 brew cask install jetbrains-toolbox

@@ -14,10 +14,10 @@ pyenv global 3.8.1
 pyenv shell 3.8.1
 
 # VIQ/DEV
-mkdir ~/Dev && cd ~/Dev
+mkdir ~/Dev && cd ~/Dev || exit
 git clone git@github.com:ventureiq/viq-docker.git
 git clone git@github.com:ventureiq/utils.git viq-utils
-cd viq-docker
+cd viq-docker || exit
 git clone git@github.com:ventureiq/viq-api.git
 git clone git@github.com:ventureiq/viq-iscrape-service.git
 git clone git@github.com:ventureiq/viq-webclient.git
